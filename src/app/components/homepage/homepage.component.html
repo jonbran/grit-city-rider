@@ -1,0 +1,7 @@
+<div>
+    <!-- <app-tile [title]="'This is a title'" [image]="'assets/bike_25.jpg'"></app-tile> -->
+
+    <div *ngFor="let row of tiles.rows">
+        <app-tile *ngFor="let tile of row" [title]=tile.title [image]=tile.image [alt]=tile.alt [route]=tile.route></app-tile>
+    </div>
+</div>

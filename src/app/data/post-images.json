@@ -1,0 +1,15 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "images": [
+                { "sort": 1, "source": "assets/CedarRiverTrail/group-foto.JPG", "alt": "Group Photo" },
+                { "sort": 2, "source": "assets/CedarRiverTrail/man-on-stilts.JPG", "alt": "Man on stilts" },
+                { "sort": 3, "source": "assets/CedarRiverTrail/bridge-one.JPG", "alt": "Bridge" },
+                { "sort": 4, "source": "assets/CedarRiverTrail/bridge-two.JPG", "alt": "Bridge" },
+                { "sort": 5, "source": "assets/CedarRiverTrail/bridge-three.jpg", "alt": "Bridge" },
+                { "sort": 6, "source": "assets/CedarRiverTrail/horse-ride.JPG", "alt": "Horse drawn carriage" }
+            ]
+        }
+    ]
+}
