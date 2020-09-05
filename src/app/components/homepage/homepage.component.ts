@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TileComponent } from '../tile/tile.component';
 import { Tiles } from '../../data/types';
-import * as tiles from '../../data/tiles.json';
+import { TileDataService } from '../../data/services/tile-data.service';
 
 @Component({
   selector: 'app-homepage',
@@ -10,12 +10,12 @@ import * as tiles from '../../data/tiles.json';
 })
 export class HomepageComponent implements OnInit {
 
-  tiles: Tiles = (tiles as any).default;
+  tiles: Tiles;
 
-  constructor() { }
+  constructor(private tileDataService: TileDataService) { }
 
   ngOnInit(): void {
-    console.log(this.tiles);
+    this.tiles = this.tileDataService.getTiles();
   }
 
 }

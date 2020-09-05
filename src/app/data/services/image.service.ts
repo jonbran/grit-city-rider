@@ -18,7 +18,6 @@ export class ImageService {
     id = +id;
 
     const images: ImageValues = _.find(me.imageData.posts, x => {
-      console.log(x.id === id);
       return x.id === id;
     }
 

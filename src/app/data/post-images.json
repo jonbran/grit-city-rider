@@ -10,6 +10,32 @@
                 { "sort": 5, "source": "assets/CedarRiverTrail/bridge-three.jpg", "alt": "Bridge" },
                 { "sort": 6, "source": "assets/CedarRiverTrail/horse-ride.JPG", "alt": "Horse drawn carriage" }
             ]
+        },
+        {
+            "id": 2,
+            "images": [
+                { "sort": 1, "source": "assets/DuvalToBenHoward/1.jpg", "alt": "Entering Markworth state forest"},
+                { "sort": 2, "source": "assets/DuvalToBenHoward/2.jpg", "alt": "Sun through the trees"},
+                { "sort": 3, "source": "assets/DuvalToBenHoward/3.jpg", "alt": "Gravel Grinder"},
+                { "sort": 4, "source": "assets/DuvalToBenHoward/4.jpg", "alt": "Grit City Riders"},
+                { "sort": 5, "source": "assets/DuvalToBenHoward/5.jpg", "alt": "Lost in the woods"},
+                { "sort": 6, "source": "assets/DuvalToBenHoward/6.jpg", "alt": "Going deep into the woods. Snakes???"},
+                { "sort": 7, "source": "assets/DuvalToBenHoward/7.jpg", "alt": "Maybe the best break spot we've ever found"},
+                { "sort": 8, "source": "assets/DuvalToBenHoward/8.jpg", "alt": "Another crew photo after lunch"},
+                { "sort": 9, "source": "assets/DuvalToBenHoward/9.jpg", "alt": "Back on pavement"},
+                { "sort": 10, "source": "assets/DuvalToBenHoward/10.jpg", "alt": "More pictures from the brak. This place is amazing!"},
+                { "sort": 12, "source": "assets/DuvalToBenHoward/11.jpg", "alt": "More pictures from the brak. This place is amazing!"},
+                { "sort": 13, "source": "assets/DuvalToBenHoward/12.jpg", "alt": "More pictures from the brak. This place is amazing!"}
+        ]
+        },
+        {
+            "id": 3,
+            "images": [
+                { "sort": 1, "source": "assets/Tahuya/1.JPG", "alt": ""},
+                { "sort": 2, "source": "assets/Tahuya/2.JPG", "alt": ""},
+                { "sort": 3, "source": "assets/Tahuya/3.JPG", "alt": ""}
+                
+        ]
         }
     ]
 }

@@ -13,6 +13,8 @@ import { CedarRiverTrailComponent } from './blog posts/cedar-river-trail/cedar-r
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 /* angular material */
 import { AngularMaterialModule } from './angular-material.module';
+import { DuvalToBenHowardComponent } from './blog posts/duval-to-ben-howard/duval-to-ben-howard.component';
+import { TahuyaComponent } from './blog posts/tahuya/tahuya.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AngularMaterialModule } from './angular-material.module';
     TileComponent,
     HomepageComponent,
     CedarRiverTrailComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    DuvalToBenHowardComponent,
+    TahuyaComponent
   ],
   imports: [
     BrowserModule,

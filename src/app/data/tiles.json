@@ -1,12 +1,12 @@
 {
     "rows": [
         [
-          { "id": 1, "title": "Cedar River Trail", "alt": "17.4 mile trail that follows the cedar river from Landsburg to Lake Washington in Renton", "image": "assets/CedarRiverTrailSign_25.jpg", "route": "cedar-river" },
-          { "id": 2, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
-          { "id": 3, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
-          { "id": 4, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
-          { "id": 5, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
-          { "id": 6, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" }
+          { "id": 1, "adeventureType": 1, "title": "Cedar River Trail", "alt": "17.4 mile trail that follows the cedar river from Landsburg to Lake Washington in Renton", "image": "assets/CedarRiverTrailSign_25.jpg", "route": "cedar-river" },
+          { "id": 2, "adeventureType": 2, "title": "Duval to Ben Howard", "alt": "Partial Gravle Trail from Duval to Ben Howard", "image": "assets/DuvalToBenHoward/icon.jpg", "route": "duval-benhoward" },
+          { "id": 3, "adeventureType": 3, "title": "Tahuya Gravl Ride", "alt": "Super fun gravel ride", "image": "assets/Tahuya/icon.jpg", "route": "tahuya" },
+          { "id": 4, "adeventureType": 1, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
+          { "id": 5, "adeventureType": 1, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" },
+          { "id": 6, "adeventureType": 1, "title": "This is a Title", "alt": "This is a description of the tile", "image": "assets/bike_25.jpg", "route": "" }
         ],
         [
            
