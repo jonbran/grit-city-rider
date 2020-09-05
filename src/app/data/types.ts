@@ -4,6 +4,7 @@ export interface Tiles {
 
 export interface Tile {
     id: number;
+    adeventureType: number;
     title: string;
     alt: string;
     image: string;
@@ -25,3 +26,8 @@ export interface ImageDescription {
     alt: string;
 }
 
+export interface AdeventureType {
+    id: number;
+    name: string;
+    description: string;
+}

@@ -1,0 +1,19 @@
+{
+    "adeventureTypes": [
+        {
+            "id": 1,
+            "name": "RoadBikeRide",
+            "description": "Road Bike Ride"
+        },
+        {
+            "id": 2,
+            "name": "GravelBikeRide",
+            "description": "Gravel Bike Ride"
+        },
+        {
+            "id": 3,
+            "name": "ParkTrail",
+            "description": "Park Trail"
+        }
+    ]
+}

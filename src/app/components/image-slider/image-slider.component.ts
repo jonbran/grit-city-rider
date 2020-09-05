@@ -27,7 +27,9 @@ export class ImageSliderComponent implements OnInit {
       this.currentImage = this.images[0] && { index: 0, image: this.images[0] } || undefined;
     } else {
       const nextIndex = this.currentImage.index + 1;
-      this.currentImage = this.images[nextIndex] && { index: nextIndex, image: this.images[nextIndex] } || this.currentImage;
+      this.currentImage = this.images[nextIndex]
+        && { index: nextIndex, image: this.images[nextIndex] }
+        || { index: 0, image: this.images[0] };
     }
   }
 
@@ -36,7 +38,10 @@ export class ImageSliderComponent implements OnInit {
       this.currentImage = this.images[0] && { index: 0, image: this.images[0] } || undefined;
     } else {
       const prevIndex = this.currentImage.index - 1;
-      this.currentImage = this.images[prevIndex] && { index: prevIndex, image: this.images[prevIndex] } || this.currentImage;
+      const lastInex = this.images.length - 1;
+      this.currentImage = this.images[prevIndex]
+        && { index: prevIndex, image: this.images[prevIndex] }
+        || { index: lastInex, image: this.images[lastInex] };
     }
   }
 
