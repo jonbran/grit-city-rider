@@ -1,7 +1,7 @@
 <div class="outer-wrapper">
-    <button mat-fab class="sliderButtonLeft" (click)="prevImage()"><<</button>
+    <button mat-fab class="sliderButtonLeft" (click)="prevImage()"><mat-icon>navigate_before</mat-icon></button>
     <div class="frame">
         <img class="currentImage" src="{{currentImage.image.source}}" title="{{currentImage.image.alt}}"/>
     </div>
-    <button mat-fab class="sliderButtonRight" (click)="nextImage()">>></button>
+    <button mat-fab class="sliderButtonRight" (click)="nextImage()"><mat-icon>navigate_next</mat-icon></button>
 </div>

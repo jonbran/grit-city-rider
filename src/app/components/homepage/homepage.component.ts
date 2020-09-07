@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { TileComponent } from '../tile/tile.component';
-import { Tiles } from '../../data/types';
+import { Tiles, Tile } from '../../data/types';
 import { TileDataService } from '../../data/services/tile-data.service';
 
 @Component({
@@ -10,12 +11,18 @@ import { TileDataService } from '../../data/services/tile-data.service';
 })
 export class HomepageComponent implements OnInit {
 
-  tiles: Tiles;
+  tiles: Tile[];
 
-  constructor(private tileDataService: TileDataService) { }
+  constructor(private route: ActivatedRoute, private tileDataService: TileDataService) { }
 
   ngOnInit(): void {
-    this.tiles = this.tileDataService.getTiles();
+    this.route.params.subscribe(params => {
+      const typeId = params.typeId;
+      if (typeId) { this.tiles = this.tileDataService.getTilesOfAdventureType(+typeId); }
+      else {
+        this.tiles = this.tileDataService.getAllTiles();
+      }
+    });
   }
 
 }

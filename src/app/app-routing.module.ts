@@ -8,6 +8,7 @@ import { TahuyaComponent } from './blog posts/tahuya/tahuya.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
+  { path: 'home/:typeId' , component: HomepageComponent },
   { path: 'cedar-river', component: CedarRiverTrailComponent },
   { path: 'duval-benhoward', component: DuvalToBenHowardComponent },
   { path: 'tahuya', component: TahuyaComponent }

@@ -1,3 +1,29 @@
 <div id="header" class="fixed-header  w3-theme-d2">
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink='home/1'>
+                <mat-icon>directions_bike</mat-icon>
+                <span>Road bike trails</span>
+        </button>
+        <button mat-menu-item routerLink="home/2">
+                <mat-icon>pedal_bike</mat-icon>
+                <span>Gravel Grinding</span>
+        </button>
+        <button mat-menu-item routerLink="home/3">
+                <mat-icon>directions_walk</mat-icon>
+                <span>Parks & Hikes</span>
+        </button>
+        <button mat-menu-item routerLink="home/4">
+                <mat-icon>directions_run</mat-icon>
+                <span>Runs</span>
+        </button>
+        <button mat-menu-item>
+                <span>About me</span>
+        </button>
+        </mat-menu>
+
         <span class="label" [routerLink]="'/'">Grit City Rider</span>
 </div>

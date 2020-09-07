@@ -33,7 +33,25 @@
             "images": [
                 { "sort": 1, "source": "assets/Tahuya/1.JPG", "alt": ""},
                 { "sort": 2, "source": "assets/Tahuya/2.JPG", "alt": ""},
-                { "sort": 3, "source": "assets/Tahuya/3.JPG", "alt": ""}
+                { "sort": 3, "source": "assets/Tahuya/3.JPG", "alt": ""},
+                { "sort": 4, "source": "assets/Tahuya/4.JPG", "alt": ""},
+                { "sort": 5, "source": "assets/Tahuya/5.JPG", "alt": ""},
+                { "sort": 6, "source": "assets/Tahuya/6.JPG", "alt": ""},
+                { "sort": 7, "source": "assets/Tahuya/7.JPG", "alt": ""},
+                { "sort": 8, "source": "assets/Tahuya/8.JPG", "alt": ""},
+                { "sort": 9, "source": "assets/Tahuya/9.JPG", "alt": ""},
+                { "sort": 10, "source": "assets/Tahuya/10.JPG", "alt": ""},
+                { "sort": 11, "source": "assets/Tahuya/11.JPG", "alt": ""},
+                { "sort": 12, "source": "assets/Tahuya/12.JPG", "alt": ""},
+                { "sort": 13, "source": "assets/Tahuya/13.JPG", "alt": ""},
+                { "sort": 14, "source": "assets/Tahuya/14.JPG", "alt": ""},
+                { "sort": 15, "source": "assets/Tahuya/15.JPG", "alt": ""},
+                { "sort": 16, "source": "assets/Tahuya/16.JPG", "alt": ""},
+                { "sort": 17, "source": "assets/Tahuya/17.JPG", "alt": ""},
+                { "sort": 18, "source": "assets/Tahuya/18.JPG", "alt": ""},
+                { "sort": 19, "source": "assets/Tahuya/19.JPG", "alt": ""},
+                { "sort": 20, "source": "assets/Tahuya/20.JPG", "alt": ""},
+                { "sort": 21, "source": "assets/Tahuya/21.JPG", "alt": ""}
                 
         ]
         }

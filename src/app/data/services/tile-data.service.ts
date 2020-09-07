@@ -21,7 +21,10 @@ export class TileDataService {
   }
 
   getTilesOfAdventureType(adeventureType: number): Tile[] {
-    const adventureTiles: Tile[] = _.flatMap(this.tiles.rows).filter(x => x.adeventureType === adeventureType);
-    return adventureTiles;
+    let rows: Tile[] = _.flatMap(this.tiles.rows);
+    rows = _.filter(rows, x => {
+      return x.adeventureType === adeventureType;
+    });
+    return rows;
   }
 }
