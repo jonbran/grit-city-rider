@@ -15,7 +15,6 @@ export class TileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(`title is ${this.title}`);
   }
 
   routeToPage(route: string) {

@@ -1,0 +1,20 @@
+{
+  "subscription": {
+    "name": "Windows Azure MSDN - Visual Studio Ultimate"
+  },
+  "project": {
+    "location": "westeurope",
+    "name": "gritcityrider"
+  },
+  "storage": {
+    "location": "westeurope",
+    "name": "gritcityrider11272"
+  },
+  "hosting": {
+    "folder": "./dist"
+  },
+  "functions": {
+    "hostName": "gritcityrider-11272.azurewebsites.net",
+    "name": "gritcityrider-11272"
+  }
+}

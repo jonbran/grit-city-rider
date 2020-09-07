@@ -14,6 +14,11 @@
             "id": 3,
             "name": "ParkTrail",
             "description": "Park Trail"
+        },
+        {
+            "id": 4,
+            "name": "Runs",
+            "description": "Runs"
         }
     ]
 }
