@@ -11,37 +11,34 @@ on:
     branches: [ master ]
 
 env:
-  AZURE_WEBAPP_NAME: grit-city-rider
+  AZURE_WEBAPP_NAME: gritcityrider-11272
   AZURE_WEBAPP_PACKAGE_PATH: './dist/grit-city-rider'
   NODE_VERSION: '14.x'
-  
+    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-  
-    strategy:
-      matrix:
-        node-version: [14]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2-beta
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: npm install
-        run: npm install
-      - name: npm build, and deploy
-        env:
-          AZURE_SERVICE_PRINCIPLE_ID: ${{ secrets.AZURE_SERVICE_PRINCIPLE_ID }}
-          AZURE_SERVICE_PRINCIPLE_PASSWORD: ${ secrets.AZURE_SERVICE_PRINCIPLE_PASSWORD }}
-          AZURE_SERVICE_PRINCIPLE_TENANT: ${{ secrets.AZURE_SERVICE_PRINCIPLE_TENANT }}
-        run:
-          npm run hexa:login
-          npm run build -- --prod
-          npm run hexa:deploy
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with: 
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Install Dependencies
+      run: npm install
+    - name: build
+      run: npm run build -- --prod
+    - name: 'Deploy to Azure Webapp'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_GRITCITY11272_PUBLISH_PROFILE }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+      
